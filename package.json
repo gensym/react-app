@@ -1,0 +1,18 @@
+{
+  "name": "interval-timer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "David Altenburg <david@gensym.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.20.2"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "scripts": {
+    "serve": "python3 -m http.server --directory build",
+    "build": "esbuild --bundle index.jsx --outfile=build/app.js && cp index.html style.css build"
+  }
+}
